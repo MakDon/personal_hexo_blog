@@ -1,0 +1,100 @@
+---
+title: 复习总结(4)操作系统(2)进程与线程ProcessAndThread
+tags: []
+id: '61'
+categories:
+  - - 操作系统
+date: 2018-03-30 05:25:03
+---
+
+#### 第二章：进程与线程（Process and Thread）
+
+### 线程Process
+
+##### 2.1.1进程模型
+
+一个进程就是一个正在执行程序的实例，包括程序计数器（program counter）、寄存器和变量的当前值。
+
+##### 2.1.2创建进程
+
+有4种主要事件导致进程的创建： 1)系统初始化 2)执行了正在运行的进程所调用的进程创建系统调用 3)用户请求创建一个新进程 4)一个批处理作业的初始化 停留在后台处理的进程称为守护进程（daemon），在UNIX中使用ps命令可以列出正在运行的进程。 使用fork系统调用可以创建新进程。（可能需要了解的：fork和vfork区别）
+
+##### 2.1.3进程的终止
+
+进程的终止通常由下列条件引起： 1)正常退出（自愿的） 2)出错退出（自愿的） 3)严重错误（非自愿） 4)被其他进程杀死（非自愿）
+
+##### 2.1.4进程的层次结构
+
+进程和它的所有子女以及后裔共同组成一个进程组。 在整个系统中，所有的进程都属于以init为根的一棵树。 windows没有进程层次的概念，所有的进程都是地位相同的。创建进程时，父进程得到一个句柄，可以用来控制子进程。
+
+#### 2.1.5进程的三个状态
+
+![](http://makdon.me/wp-content/uploads/2018/03/0X31BKVY9NGAYG7WNG.png)  
+
+##### 2.1.6进程的实现
+
+操作系统维护一张表格（结构数组），即进程表（process table）。 每个进程占用一个进程表项（Processing Control Block） 包括一下内容。 ![](http://makdon.me/wp-content/uploads/2018/03/I5_96@DY3A73NBEP.png)  
+
+##### 2.1.7多道程序（multiprogramming）设计模型
+
+  ![](http://makdon.me/wp-content/uploads/2018/03/IFRFJ@D6W6OTHKP8RJ.png)        
+
+### 线程（Thread）
+
+##### 2.2.1线程的使用
+
+这里简单介绍了一下线程的使用场景。
+
+##### 2.2.2经典的线程模型
+
+  ![](http://makdon.me/wp-content/uploads/2018/03/45APGP55_6E473X5.png) ![](http://makdon.me/wp-content/uploads/2018/03/HG8EXCY6M22RY1__B.png) 这里要注意的是线程之间共享的东西。
+
+##### 2.2.3POSIX线程
+
+介绍了一下Pthread的函数调用。
+
+##### 2.2.4在用户空间中实现线程 2.2.5在内核中实现进程
+
+![](http://makdon.me/wp-content/uploads/2018/03/RZZDDHYIZIU8N3SE-e1522324150471.png)  
+
+## 2.3进程间通讯（Inter Process Communication）#重点
+
+##### 2.3.1竞争条件（race condition）
+
+##### 2.3.2临界区(critical region)
+
+需要互斥（mutual exclusion），即确保当一个进程在使用一个共享变量或文件时，其它进程不能做同样的操作。 ![](http://makdon.me/wp-content/uploads/2018/03/UC2NG_IYMI7US20IAQ1U.png)
+
+##### 2.3.3忙等待的互斥
+
+讨论几种实现互斥的方案，包括： 屏蔽中断 锁变量 严格轮转法 peterson解法 TSL指令：测试并加锁（Tset and Set Lock）是硬件支持的一种方案。
+
+##### 2.3.4睡眠与唤醒
+
+生产者-消费者问题（producer-consumer）称为有界缓冲区（bounded-buffer）问题。# 这个是重点
+
+##### 2.3.5信号量（semaphore）#这个也是重点
+
+用一个整型变量累计唤醒次数。Proberen使信号量减一，Verhogen使信号量加一。 如何用信号量解决生产者-消费者问题。 另一种用途是同步（synchronization）。用信号量来保证某种时间的顺序发生或不发生。
+
+##### 2.3.6互斥量（mutex）
+
+信号量的一个简化版本。
+
+##### 2.3.7管程（Monitor）
+
+任一时刻管程中只能有一个活跃进程。 互斥由编译器负责，但通常的做法是用一个互斥量或二元信号量。
+
+##### 2.3.8消息传递massage passing
+
+##### 2.3.9屏障barrier
+
+用于进程组而不是用于生产者-消费者类情形的。 ![](http://makdon.me/wp-content/uploads/2018/03/SL5XHBM1XZ@DHGTHJB.png)  
+
+##### 2.4调度
+
+调度的三种不同环境： 批处理 交互式 实时 批处理系统中的调度： 先来先服务（first-come first-severd） 最短作业优先（shortest job first） 最短剩余时间优先（shortest remaining time next）有关的运行时间必须提前掌握。 交互式系统的调度 1轮转调度(round robin)，每个进程分配一个时间片（quantum）。进程切换（Process switch）又称为上下文切换（context switch） 2、优先级调度 3、多级队列 4、最短进程优先。根据过去的行为进程推车某命令运行时间。T=aT0+（1-a）T1 5、保证调度：每个进程获得1/n的CPU时间。 6、彩票调度（lottery scheduling） 7、公平分享调度Fair-Share Scheduling：n个用户每个用户有1/nCPU时间，无关进程  
+
+##### 2.5经典的IPC问题
+
+2.5.1哲学家就餐问题 2.5.2读者-写者问题
