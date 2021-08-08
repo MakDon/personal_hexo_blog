@@ -1,3 +1,13 @@
+---
+title: WordPress 迁移 hexo 小记
+id: '99'
+tags: []
+categories:
+- - 其它杂项
+    comments: false 
+date: 2021-08-08 23:19:00
+---
+
 # WordPress 迁移 hexo 小记
 
     hello hexo!
