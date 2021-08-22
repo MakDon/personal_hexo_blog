@@ -29,15 +29,15 @@ date: 2018-03-30 05:25:03
 
 #### 2.1.5进程的三个状态
 
-![](http://makdon.me/wp-content/uploads/2018/03/0X31BKVY9NGAYG7WNG.png)  
+![](../img/2018/03/0X31BKVY9NGAYG7WNG.png)  
 
 ##### 2.1.6进程的实现
 
-操作系统维护一张表格（结构数组），即进程表（process table）。 每个进程占用一个进程表项（Processing Control Block） 包括一下内容。 ![](http://makdon.me/wp-content/uploads/2018/03/I5_96@DY3A73NBEP.png)  
+操作系统维护一张表格（结构数组），即进程表（process table）。 每个进程占用一个进程表项（Processing Control Block） 包括一下内容。 ![](../img/2018/03/I5_96@DY3A73NBEP.png)  
 
 ##### 2.1.7多道程序（multiprogramming）设计模型
 
-  ![](http://makdon.me/wp-content/uploads/2018/03/IFRFJ@D6W6OTHKP8RJ.png)        
+  ![](../img/2018/03/IFRFJ@D6W6OTHKP8RJ.png)        
 
 ### 线程（Thread）
 
@@ -47,7 +47,7 @@ date: 2018-03-30 05:25:03
 
 ##### 2.2.2经典的线程模型
 
-  ![](http://makdon.me/wp-content/uploads/2018/03/45APGP55_6E473X5.png) ![](http://makdon.me/wp-content/uploads/2018/03/HG8EXCY6M22RY1__B.png) 这里要注意的是线程之间共享的东西。
+  ![](../img/2018/03/45APGP55_6E473X5.png) ![](../img/2018/03/HG8EXCY6M22RY1__B.png) 这里要注意的是线程之间共享的东西。
 
 ##### 2.2.3POSIX线程
 
@@ -55,7 +55,7 @@ date: 2018-03-30 05:25:03
 
 ##### 2.2.4在用户空间中实现线程 2.2.5在内核中实现进程
 
-![](http://makdon.me/wp-content/uploads/2018/03/RZZDDHYIZIU8N3SE-e1522324150471.png)  
+![](../img/2018/03/RZZDDHYIZIU8N3SE-e1522324150471.png)  
 
 ## 2.3进程间通讯（Inter Process Communication）#重点
 
@@ -63,7 +63,7 @@ date: 2018-03-30 05:25:03
 
 ##### 2.3.2临界区(critical region)
 
-需要互斥（mutual exclusion），即确保当一个进程在使用一个共享变量或文件时，其它进程不能做同样的操作。 ![](http://makdon.me/wp-content/uploads/2018/03/UC2NG_IYMI7US20IAQ1U.png)
+需要互斥（mutual exclusion），即确保当一个进程在使用一个共享变量或文件时，其它进程不能做同样的操作。 ![](../img/2018/03/UC2NG_IYMI7US20IAQ1U.png)
 
 ##### 2.3.3忙等待的互斥
 
@@ -89,7 +89,7 @@ date: 2018-03-30 05:25:03
 
 ##### 2.3.9屏障barrier
 
-用于进程组而不是用于生产者-消费者类情形的。 ![](http://makdon.me/wp-content/uploads/2018/03/SL5XHBM1XZ@DHGTHJB.png)  
+用于进程组而不是用于生产者-消费者类情形的。 ![](../img/2018/03/SL5XHBM1XZ@DHGTHJB.png)  
 
 ##### 2.4调度
 

@@ -9,7 +9,7 @@ date: 2018-10-31 15:31:45
 
 代码地址：https://github.com/MakDon/toy\_calculator
 效果如下：
-![](http://makdon.me/wp-content/uploads/2018/10/Screenshot-2018-10-30-at-4.56.27-PM.png)
+![](../img/2018/10/Screenshot-2018-10-30-at-4.56.27-PM.png)
 
 实现的功能为读入一个字符串格式的算式，然后输出数字格式的结果。
 
@@ -45,7 +45,7 @@ date: 2018-10-31 15:31:45
     "SEPARATOR": r"( \\n)"# 分隔符，此处使用空格与换行
 }
 
-  语法分析器： 语法分析，是把词法分析器生成的token串，转换为抽象语法树（Abstract Syntax Tree，**AST**）。上节的token串生成的AST如下： ![](http://makdon.me/wp-content/uploads/2018/10/Screenshot-2018-10-31-at-3.08.15-PM.png) 在此计算器中，我选择的是自顶向下的生成方式。四则运算语法如下：
+  语法分析器： 语法分析，是把词法分析器生成的token串，转换为抽象语法树（Abstract Syntax Tree，**AST**）。上节的token串生成的AST如下： ![](../img/2018/10/Screenshot-2018-10-31-at-3.08.15-PM.png) 在此计算器中，我选择的是自顶向下的生成方式。四则运算语法如下：
 
 Expr      ->    Term ExprTail
 ExprTail  ->    + Term ExprTail

@@ -11,7 +11,7 @@ date: 2018-03-29 07:54:08
 
 #### 二叉树（Binary Tree）
 
-每个节点（node）最多有两个子树（children）。 ![](http://makdon.me/wp-content/uploads/2018/03/N2NWA0_H@7C777@YDT.png) ---Wikipedia 二叉树的遍历： 深度优先遍历(depth-first order)、广度优先遍历(Breadth-first order) 前序遍历(pre-order)、中序遍历(in-order)、后序遍历(post-order)  
+每个节点（node）最多有两个子树（children）。 ![](../img/2018/03/N2NWA0_H@7C777@YDT.png) ---Wikipedia 二叉树的遍历： 深度优先遍历(depth-first order)、广度优先遍历(Breadth-first order) 前序遍历(pre-order)、中序遍历(in-order)、后序遍历(post-order)  
 
 #### 二叉搜索树（Binary Search Tree）
 
@@ -26,11 +26,11 @@ date: 2018-03-29 07:54:08
 
 #### 平衡二叉搜索树（Balanced Binary Tree）
 
-平衡二叉搜索树跟二叉搜索树差别在于，当插入、删除数据导致树的高度相差大于1时，会对树进行旋转(rotate)。 平衡二叉树可以保证查找时间，但是删除节点需要检查从删除节点开始到根的路径上所有的平衡因子，因此删除代价较大。 ![](http://makdon.me/wp-content/uploads/2018/03/WDCJNF_M19BIUQHCILQDC.png) 图自百度百科
+平衡二叉搜索树跟二叉搜索树差别在于，当插入、删除数据导致树的高度相差大于1时，会对树进行旋转(rotate)。 平衡二叉树可以保证查找时间，但是删除节点需要检查从删除节点开始到根的路径上所有的平衡因子，因此删除代价较大。 ![](../img/2018/03/WDCJNF_M19BIUQHCILQDC.png) 图自百度百科
 
 #### 红黑树（Red-black tree） # 划重点
 
-牺牲了部分平衡性以换取插入/删除操作时少量的旋转操作，整体来说性能要优于AVL树。---wikipedia 删除节点时只需要进行最多3次的旋转。 ![](http://makdon.me/wp-content/uploads/2018/03/VCP1LJ_UX0_9@K1KZO.png)  
+牺牲了部分平衡性以换取插入/删除操作时少量的旋转操作，整体来说性能要优于AVL树。---wikipedia 删除节点时只需要进行最多3次的旋转。 ![](../img/2018/03/VCP1LJ_UX0_9@K1KZO.png)  
 
 1.  节点是红色或黑色。
 2.  根是黑色。
@@ -46,6 +46,6 @@ date: 2018-03-29 07:54:08
 
 #### B+树（B+Tree） # 划重点
 
-  ![](http://makdon.me/wp-content/uploads/2018/03/Y@M87POAP3OIIGHR8Q.png)
+  ![](../img/2018/03/Y@M87POAP3OIIGHR8Q.png)
 
 # **插入搜索删除都是重点**

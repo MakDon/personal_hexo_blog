@@ -117,6 +117,6 @@ Trap:Trap指令把用户态切为内核态
 
 UID: User Identification 用户标识
 
-  ![](http://makdon.me/wp-content/uploads/2018/03/7K6TIHIZ8NKZ09H5.png)  
+  ![](../img/2018/03/7K6TIHIZ8NKZ09H5.png)  
 
-![](http://makdon.me/wp-content/uploads/2018/03/KBO7D47SVJ2UUQD0PHHV.jpg)
+![](../img/2018/03/KBO7D47SVJ2UUQD0PHHV.jpg)

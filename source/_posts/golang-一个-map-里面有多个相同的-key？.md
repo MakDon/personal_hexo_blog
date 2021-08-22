@@ -12,7 +12,7 @@ date: 2021-04-07 23:03:30
 ## The Problem
 
 楼主使用 fiber 这个 web 框架，每次接受请求时从url 解析一个 `id` 参数，然后对一个全局的 counter 进行累加操作。这个全局的 counter 是一个 map\[string\]int。锁什么的都用得很正确，但是神奇的是，println 时发现，map 里面有许多个相同的 key。这与 map 的特性相悖，一个 map 里面 key 应该是唯一的。  
-在最后我通过一个 demo 复现了这个 case。具体的代码在下面再一步一步解释。 ![](http://makdon.me/wp-content/uploads/2021/04/tmp.png)
+在最后我通过一个 demo 复现了这个 case。具体的代码在下面再一步一步解释。 ![](../img/2021/04/tmp.png)
 
 ## 初步定位
 
