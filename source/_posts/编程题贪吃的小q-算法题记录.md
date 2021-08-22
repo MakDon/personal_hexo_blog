@@ -2,6 +2,7 @@
 title: 编程题：贪吃的小Q-算法题记录
 tags: []
 id: '145'
+author: makdon
 categories:
   - - 数据结构与算法
 date: 2019-03-04 23:54:15

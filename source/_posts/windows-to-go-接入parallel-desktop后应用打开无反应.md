@@ -2,6 +2,7 @@
 title: Windows To Go 接入parallel desktop后应用打开无反应
 tags: []
 id: '122'
+author: makdon
 categories:
   - - 其它杂项
 date: 2018-07-16 20:19:58

@@ -2,6 +2,7 @@
 title: '译: Golang 如何生成固定长度的随机字符串'
 tags: []
 id: '203'
+author: makdon
 categories:
   - - 数据结构与算法
 date: 2020-12-17 00:57:17

@@ -2,6 +2,7 @@
 title: WordPress 迁移 hexo 小记
 id: '99'
 tags: []
+author: makdon
 categories:
 - - 其它杂项
     comments: false 
