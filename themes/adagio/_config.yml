@@ -7,7 +7,7 @@
 #         The other is for small screen, config with img_banner_small.
 #         The value for these two should be url or relative url to a picture.
 #         If img_banner is false, no banner image will be used.
-img_banner: true
+img_banner: false
 img_banner_large: http://makdon.me/img/kxkxy.jpg
 img_banner_small: http://makdon.me/img/kxkxy.jpg
 
