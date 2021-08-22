@@ -7,9 +7,9 @@
 #         The other is for small screen, config with img_banner_small.
 #         The value for these two should be url or relative url to a picture.
 #         If img_banner is false, no banner image will be used.
-img_banner: false
-img_banner_large: https://via.placeholder.com/1280x320.png?text=img_banner_large
-img_banner_small: https://via.placeholder.com/620x320.png?text=img_banner_small
+img_banner: true
+img_banner_large: http://makdon.me/img/kxkxy.jpg
+img_banner_small: http://makdon.me/img/kxkxy.jpg
 
 # Logo: The logo will appear on every page except for the index page.
 #       If your logo is a picture, please specify the url for the logo at logo_url.
@@ -84,7 +84,7 @@ sidebar_contact: true
 sidebar_contact_name: makdon
 sidebar_contact_prefix:
 sidebar_contact_suffix:
-sidebar_contact_address:
+sidebar_contact_address: makdon@makdon.me
 
 # Add archive tags to the side bar.
 sidebar_archive: true

@@ -1,11 +1,10 @@
 ---
 title: WordPress 迁移 hexo 小记
-id: '99'
 tags: []
+id: '99'
 author: makdon
 categories:
 - - 其它杂项
-    comments: false 
 date: 2021-08-08 23:19:00
 ---
 
