@@ -11,17 +11,17 @@ date: 2018-04-03 08:02:40
 
 #### TDD: Test-Driven Development测试驱动开发
 
-![](../img/2018/04/15226837681.png)  
+![](/img/2018/04/15226837681.png)  
 
 #### V模型，W模型，H模型
 
-![](../img/2018/04/1349748356_7491.gif) ![](../img/2018/04/176751dc-87bf-419c-beb3-7ce7192d27d1.jpg) ![](../img/2018/04/4056d3d5-b96c-4601-beac-0b01b1168d48.jpg)  
+![](/img/2018/04/1349748356_7491.gif) ![](/img/2018/04/176751dc-87bf-419c-beb3-7ce7192d27d1.jpg) ![](/img/2018/04/4056d3d5-b96c-4601-beac-0b01b1168d48.jpg)  
 
 ### 公理
 
 ![](file:///C:\Users\Mak\AppData\Local\Temp\1349748356_7491.gif)![](file:///C:\Users\Mak\AppData\Local\Temp\1349748356_7491.gif)![](file:///C:\Users\Mak\AppData\Local\Temp\1349748356_7491-1.gif)Axiom 1 ：It is impossible to test a program completely Axiom 2： Software testing is a risk-based exercise
 
-![](../img/2018/04/3PQI8_SB3OEXD0P4.png)
+![](/img/2018/04/3PQI8_SB3OEXD0P4.png)
 
 Axiom 3： Testing cannot show the absence of bugs Axiom 4：The more bugs you find, the more bugs there are
 
@@ -29,11 +29,11 @@ Axiom 5： Not all bugs found will be fixed Axiom 6： It is difficult to say wh
 
 ### 软件测试方法分类
 
-![](../img/2018/04/55B0WOSM35RN0WALEF.png)  
+![](/img/2018/04/55B0WOSM35RN0WALEF.png)  
 
 ### 测试策略的概念
 
-![](../img/2018/04/1FLJ_CKS_W2XBRWZN.png)
+![](/img/2018/04/1FLJ_CKS_W2XBRWZN.png)
 
 ### 测试用例
 

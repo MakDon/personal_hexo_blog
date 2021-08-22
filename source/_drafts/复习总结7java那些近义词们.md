@@ -29,7 +29,7 @@ Vector有线程同步，线程安全，同时也导致访问相对较慢。 都�
 
 ### sleep和wait
 
-sleep在睡眠时，仍然持有锁。 wait在睡眠时释放锁。 实际上线程的状态也不一样。 ![](../img/2018/04/174442_0BNr_182175-1.jpg) 图来自https://my.oschina.net/mingdongcheng/blog/139263
+sleep在睡眠时，仍然持有锁。 wait在睡眠时释放锁。 实际上线程的状态也不一样。 ![](/img/2018/04/174442_0BNr_182175-1.jpg) 图来自https://my.oschina.net/mingdongcheng/blog/139263
 
 ### collection 和 collections
 
