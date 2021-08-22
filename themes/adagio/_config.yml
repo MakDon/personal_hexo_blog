@@ -71,9 +71,9 @@ trending:
 # Specify the avatar picture url in avatar_link
 # Add some word to the description.
 sidebar_about_me: true
-sidebar_avatar_link: https://via.placeholder.com/200x200.png?text=sidebar_avatar_link
+sidebar_avatar_link: http://makdon.me/img/avatar.jpg
 sidebar_avatar_alt: alt
-sidebar_about_description: The owner of this website.
+sidebar_about_description: A backend developer.
 
 # Add some social network links to the sidebar.
 # The content are identical to the social media part.
@@ -82,9 +82,9 @@ sidebar_social_network: true
 # Add contact information to the side bar.
 sidebar_contact: true
 sidebar_contact_name: makdon
-sidebar_contact_prefix: Dr.
-sidebar_contact_suffix: Director
-sidebar_contact_address: 1 Happy Rd. <br> Utopia
+sidebar_contact_prefix:
+sidebar_contact_suffix:
+sidebar_contact_address:
 
 # Add archive tags to the side bar.
 sidebar_archive: true
