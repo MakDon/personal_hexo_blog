@@ -1,6 +1,6 @@
 ---
 title: 'Golang: 一个 map 里面有多个相同的 key？'
-tags: []
+tags: ['Go']
 id: '208'
 author: makdon
 categories:

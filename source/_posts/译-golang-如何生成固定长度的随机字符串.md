@@ -1,6 +1,6 @@
 ---
 title: '译: Golang 如何生成固定长度的随机字符串'
-tags: []
+tags: ['Go']
 id: '203'
 author: makdon
 categories:
